@@ -1,0 +1,195 @@
+/* Сброс стилей   Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+/* --- Стили --- */
+
+html {
+	font-size: 20px;
+	font-family: Arial;
+}
+
+h1{
+	font-size: 1.6rem;
+/*	padding-left: 1rem;*/
+text-align:center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+
+h2 {
+	font-size: 1.4rem;
+	text-align: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.d1 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 2fr 2fr 1fr 1fr 1fr;
+	justify-content: space-evenly;
+	gap: 1rem;
+	margin: 1rem;
+}
+
+.d2 {
+	border: 2px solid green;
+	border-radius: 15px;
+	padding: 0.5rem;
+}
+
+.d2-1 {
+	grid-column: 1 / 3;
+}
+
+.d2-2 {
+	grid-column: 3 / 5;
+}
+
+.d2-3 {
+	grid-column: 1 / 3;
+}
+
+.d2-4 {
+	grid-column: 3 / 5;
+}
+
+.d2-9 {
+	grid-column: 1/ 5;
+}
+
+/* Стили для кнопки */
+.my-beautiful-btn {
+	/* Убираем стандартные рамки браузера */
+	border: none;
+	outline: none;
+	/* Размеры и внутренние отступы (делают кнопку пропорциональной) */
+	padding: 14px 28px;
+	/* Скругление углов */
+	border-radius: 8px;
+	/* Цвета: фон и текст */
+	background-color: #4f46e5; /* Современный индиго/фиолетовый */
+	color: #ffffff;
+	/* Шрифт */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: 600; /* Полужирный */
+	letter-spacing: 0.5px; /* Небольшое расстояние между буквами */
+	
+
+	padding-left: auto;
+	padding-right: auto;
+
+
+	/* Курсор и тени для объема */
+	cursor: pointer;
+	box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2), 0 2px 4px -1px rgba(79, 70, 229, 0.1);
+	/* Плавность анимации при наведении (важнейший элемент!) */
+	transition: all 0.3s ease;
+}
+
+	/* Эффект при наведении мыши (Hover) */
+	.my-beautiful-btn:hover {
+		background-color: #4338ca; /* Тон становится чуть темнее */
+		box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4); /* Тень становится больше (эффект приподнимания) */
+		transform: translateY(-2px); /* Кнопка слегка смещается вверх */
+	}
+
+	/* Эффект при клике (Active) */
+	.my-beautiful-btn:active {
+		transform: translateY(1px); /* Кнопка «вжимается» при нажатии */
+		box-shadow: 0 2px 4px -1px rgba(79, 70, 229, 0.2);
+	}
+
