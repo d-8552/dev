@@ -56,7 +56,8 @@
     <script>
         window.onload = function() {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', '/storage/emulated/0/Недвижимость/footer.html');
+          
+            xhr.open('GET', 'https://d-8552.github.io/dev/footer.html');
             xhr.send();
             xhr.onreadystatechange = function() {
                 if(xhr.readyState === 4 && xhr.status === 200) {
