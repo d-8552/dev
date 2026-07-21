@@ -18,4 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
     includeHTML("header-container", "header.html");
     includeHTML("nav-container", "nav.html");
     includeHTML("footer-container", "footer.html");
+    includeHTML("footer-container-2", "footer-2.html");
 });
